@@ -889,8 +889,8 @@
                 "text": "Kundhantering"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -904,8 +904,19 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false
+              "threats": [
+                {
+                  "id": "b7901e21-b5c1-4b49-b891-661d53ac3355",
+                  "status": "Open",
+                  "severity": "Low",
+                  "title": "Threat #1",
+                  "type": "Spoofing",
+                  "description": "Mailspoofing kan vara en bra social engineering-teknik att använda sig av för att komma åt kunddatabasen. Kundhanteringen bör därför inte vara i centrum då man kan komma åt den från flera olika håll.",
+                  "mitigation": "Spam filter, antivirus programs, anti malware",
+                  "modelType": "STRIDE"
+                }
+              ],
+              "hasOpenThreats": true
             }
           },
           {
